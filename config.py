@@ -42,3 +42,10 @@ def load_config():
         return ProductionConfig
     else:
         return Config
+
+# config.py
+
+# Database configuration
+SQLALCHEMY_DATABASE_URI = 'sqlite:///task_manager.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False  # This is optional but recommended
+
